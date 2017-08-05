@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\Deployment\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Breeze.AddIns.Common\Breeze.AddIns.Common.csproj" />
+    <ProjectReference Include="..\MoreAddIns.Common\MoreAddIns.Common.csproj" />
+  </ItemGroup>
+
+</Project>
