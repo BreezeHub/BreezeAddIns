@@ -1,2 +1,2 @@
 # BreezeAddIns
-A proof of concept project to add an Add-In framework to the Breeze platform.
+A proof of concept project to add an add-in framework to the Breeze platform.
