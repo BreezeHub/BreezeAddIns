@@ -30,8 +30,8 @@ namespace Breeze.AddIns.Feature.AddIn {
 			});
 
 			//load addins indicate as auto addins
-			foreach (string name in AutoRegistrations.GetAutoRegistrationNames()) {
-				AddInTypes addInTypes = TypeLoader.LoadAddInTypes( NamedAddins.GetDeploymentPackageByName(name) );
+			foreach (string name in AutoRegistration.PackagesByName) {
+				AddInTypes addInTypes = TypeLoader.LoadAddInTypes( NamedAddins.DeploymentPackages[name] );
 
 				addInAppBuilder.ConfigureFeature(features => {
 					features

@@ -1,6 +1,4 @@
-﻿using System;
-using AliceBob.Common;
-using Breeze.AddIns.Builder.Feature;
+﻿using Breeze.AddIns.Builder.Feature;
 using Breeze.AddIns.Common;
 
 namespace AliceAddIn.Feature

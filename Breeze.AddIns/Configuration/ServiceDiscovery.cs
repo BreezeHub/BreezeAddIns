@@ -19,6 +19,6 @@ namespace Breeze.AddIns.Configuration
 		public static Type[] Discover(Assembly a) => a.DefinedTypes
 				.Where(t => t.IsDefined(typeof(BreezeServiceAttribute), true))
 				.Select(t => t.AsType())
-				.ToArray<Type>();
+				.ToArray();
     }
 }

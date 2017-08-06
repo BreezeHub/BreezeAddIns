@@ -42,14 +42,8 @@ namespace Breeze.AddIns.Builder.Feature
             this.featureRegistrations = new List<IFeatureRegistration>();
         }
 
-        /// <inheritdoc />
-        public List<IFeatureRegistration> FeatureRegistrations
-        {
-            get
-            {
-                return this.featureRegistrations;
-            }
-        }
+	    /// <inheritdoc />
+	    public List<IFeatureRegistration> FeatureRegistrations => this.featureRegistrations;
 
         /// <inheritdoc />
         public IFeatureRegistration AddFeature<TImplementation>() where TImplementation : class, IAppFeature

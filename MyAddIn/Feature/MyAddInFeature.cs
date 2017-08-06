@@ -1,5 +1,4 @@
-﻿using System;
-using Breeze.AddIns.Builder.Feature;
+﻿using Breeze.AddIns.Builder.Feature;
 using Breeze.AddIns.Common;
 
 namespace MyAddIn.Feature

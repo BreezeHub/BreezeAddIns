@@ -15,14 +15,14 @@ namespace Breeze.AddIns
 		//Provides both feature and service collections.
 		public IAppServiceProvider Services { get; set; }
 
-		private ConsoleLog consoleLog;
-		private ILogger logger;
+		private readonly ConsoleLog consoleLog;
+		private readonly ILogger logger;
 
 		//These are published services known by the host at
 		//compile time.
-		IMyAddInService myAddInService;
-		IMoreAddInsService moreAddInsService;
-		IMyOtherAddInService myOtherAddInService;
+		private readonly IMyAddInService myAddInService;
+		private readonly IMoreAddInsService moreAddInsService;
+		private readonly IMyOtherAddInService myOtherAddInService;
 
 		//The Dependency Injection system uses this constructor
 		//when addins are used eg when UseAddIns() is specified at
@@ -46,13 +46,7 @@ namespace Breeze.AddIns
 			this.logger = consoleLog.LoggerFactory.CreateLogger<App>();
 		}
 
-		public ILogger Log 
-		{
-			get 
-			{
-				return this.logger;
-			}
-		}
+		public ILogger Log => this.logger;
 
 		//sets up services
 		public App Initialize(IAppServiceProvider serviceProvider) {
